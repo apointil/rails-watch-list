@@ -1,0 +1,10 @@
+<div class="container">
+  <h1><%= @list.name %></h1>
+  <% @list.bookmarks.each do |bookmark| %>
+  <p><%= bookmark.comment %></p>
+  <p><%= bookmark.movie.title %></p>
+
+  <% end %>
+
+  <%= link_to 'Add a bookmark', new_list_bookmark_path(@list), class: "btn btn-primary"  %>
+</div>

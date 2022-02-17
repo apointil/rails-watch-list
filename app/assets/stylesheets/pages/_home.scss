@@ -1,1 +1,17 @@
 // Specific CSS for your home-page
+a {
+  text-decoration: none;
+}
+
+ul {
+  width: 300px;
+
+  :hover {
+    background-color: rgb(202, 202, 202);
+  }
+}
+
+.content {
+  width: 700px;
+  align-items: center;
+}

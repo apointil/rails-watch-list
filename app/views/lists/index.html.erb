@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="card-category mb-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://s3-us-west-2.amazonaws.com/prd-rteditorial/wp-content/uploads/2018/03/13153742/RT_300EssentialMovies_700X250.jpg)">
+    Movie Lists
+  </div>
+  <div class="content mx-auto">
+    <ul class="list-group mb-4">
+      <% @lists.each do |list| %>
+        <%= link_to list_path(list) do %>
+          <li class="list-group-item"><%= list.name %></li>
+        <% end %>
+      <% end %>
+    </ul>
+    <%= link_to 'Create a list', new_list_path, class: "btn btn-primary" %>
+  </div>
+</div>

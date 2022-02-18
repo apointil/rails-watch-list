@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="card-category mb-4 mt-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://s3-us-west-2.amazonaws.com/prd-rteditorial/wp-content/uploads/2018/03/13153742/RT_300EssentialMovies_700X250.jpg)">
+  <div class="card-category mb-4 mt-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_tag 'movie_lists.jpg' %>)">
     <%= @list.name %>
   </div>
   <% @list.bookmarks.each do |bookmark| %>
